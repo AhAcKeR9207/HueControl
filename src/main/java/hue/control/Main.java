@@ -16,19 +16,19 @@ public class Main {
 		WhiteLight light1 = new WhiteLight(1);
 		WhiteLight light2 = new WhiteLight(2);
 		WhiteLight light3 = new WhiteLight(3);
-		WhiteLight light4 = new WhiteLight(4);
-		ColorLight light5 = new ColorLight(5);
+		//WhiteLight light4 = new WhiteLight(4);
+		//ColorLight light5 = new ColorLight(5);
 
 		// Puts all of the white light panels into one array
 		ArrayList<JPanel> whiteLights = new ArrayList<JPanel>();
 		whiteLights.add(light1.getPanel());
 		whiteLights.add(light2.getPanel());
 		whiteLights.add(light3.getPanel());
-		whiteLights.add(light4.getPanel());
+		//whiteLights.add(light4.getPanel());
 
 		// Puts all of the color light panels into another array
 		ArrayList<JPanel> colorLights = new ArrayList<JPanel>();
-		colorLights.add(light5.getPanel());
+		//colorLights.add(light5.getPanel());
 		
 		// Starts the GUI by passing the light panel arrays to the HueGUI class
 		new HueGUI(whiteLights, colorLights);

@@ -15,11 +15,11 @@ import hue.control.GUI.Components.ToggleButton;
 public class WhiteLight extends Light {
     public WhiteLight (int id) {
         try {
-            this.brightness = 100;
+            this.brightness = Constants.defaultBrightness;
             this.id = id;
             this.lightPane = new LightPane(){};
             this.panel = new JPanel();
-            this.state = true;
+            this.state = Constants.defaultState;
 
             this.panel.add(this.lightPane);
             this.panel.add(new ToggleButton(this));

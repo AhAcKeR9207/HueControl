@@ -33,12 +33,12 @@ public class ColorLight extends Light {
      */
     public ColorLight(int id) {
         try {
-            this.brightness = 100;
-            this.color = Color.white;
+            this.brightness = Constants.defaultBrightness;
+            this.color = Constants.defaultColor;
             this.id = id;
             this.lightPane = new LightPane(){};
             this.panel = new JPanel();
-            this.state = true;
+            this.state = Constants.defaultState;
 
             this.panel.add(this.lightPane);
             this.panel.add(new ToggleButton(this));

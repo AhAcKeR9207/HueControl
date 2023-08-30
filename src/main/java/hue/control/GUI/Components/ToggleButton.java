@@ -10,6 +10,7 @@ import javax.swing.border.LineBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
+import hue.control.Constants;
 import hue.control.GUIDevices.Light;
 
 public class ToggleButton extends JToggleButton {
@@ -22,11 +23,16 @@ public class ToggleButton extends JToggleButton {
 
         // Setup
         setAlignmentX(CENTER_ALIGNMENT);
-        setText("ON");
-        setBorder(inactive);
+        if (Constants.defaultState) {
+            setText("ON");
+            setBorder(inactive);
+        } else {
+            setText("OFF");
+            setBorder(active);
+        }
         addChangeListener(new ChangeListener() {
             public void stateChanged(ChangeEvent event) {
-                if (isSelected()) {
+                if (light.getState()) {
                     setText("OFF");
                     setBorder(active);
                     light.setState(false);

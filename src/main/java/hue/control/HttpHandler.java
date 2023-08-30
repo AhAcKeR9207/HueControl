@@ -26,9 +26,9 @@ public class HttpHandler {
 			// Prints the response
 			System.out.println("Response: " + response.body());
 		} catch (InterruptedException e) {
-			System.out.println("InterruptedException Error: " + e);
+			System.out.println("InterruptedException Error: " + e.getMessage());
 		} catch (IOException e) {
-			System.out.println("IOException Error: " + e);
+			System.out.println("IOException Error: " + e.getMessage());
 		}
 	}
 
@@ -49,9 +49,9 @@ public class HttpHandler {
 			// Prints the response
 			System.out.println("Response: " + response.body());
 		} catch (InterruptedException e) {
-			System.out.println("InterruptedException Error: " + e);
+			System.out.println("InterruptedException Error: " + e.getMessage());
 		} catch (IOException e) {
-			System.out.println("IOException Error: " + e);
+			System.out.println("IOException Error: " + e.getMessage());
 		}
 	}
 
@@ -71,9 +71,9 @@ public class HttpHandler {
 			// Prints the response
 			System.out.println("Response: " + response.body());
 		} catch (InterruptedException e) {
-			System.out.println("InterruptedException Error: " + e);
+			System.out.println("InterruptedException Error: " + e.getMessage());
 		} catch (IOException e) {
-			System.out.println("IOException Error: " + e);
+			System.out.println("IOException Error: " + e.getMessage());
 		}
 	}
 
@@ -93,9 +93,9 @@ public class HttpHandler {
 			// Prints the response
 			System.out.println("Response: " + response.body());
 		} catch (InterruptedException e) {
-			System.out.println("InterruptedException Error: " + e);
+			System.out.println("InterruptedException Error: " + e.getMessage());
 		} catch (IOException e) {
-			System.out.println("IOExcaption Error: " + e);
+			System.out.println("IOExcaption Error: " + e.getMessage());
 		}
 	}
 }
