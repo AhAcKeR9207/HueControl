@@ -84,6 +84,6 @@ public class ColorLight extends Light {
         newState.put("xy", colorArray);
 
         // Sends the JSON
-        HttpHandler.put(Constants.URL + this.id + "/state", newState.toJSONString());
+        HttpHandler.put(Constants.baseUrl + this.id + "/state", newState.toJSONString());
     }
 }

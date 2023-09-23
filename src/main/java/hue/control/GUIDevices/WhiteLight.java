@@ -50,7 +50,7 @@ public class WhiteLight extends Light {
         newState.put("bri", this.brightness);
 
         // Sends the JSON
-        HttpHandler.put(Constants.URL + this.id + "/state", newState.toJSONString());
+        HttpHandler.put(Constants.baseUrl + this.id + "/state", newState.toJSONString());
 
         // Updates the color of the light panel.
         this.lightPane.setBulbColor(newColor);
